@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Create a Form Dynamically 
+            with the JavaScript
+        </title>
+    </head>
+    <body style="text-align: center;">
+   
+       
+        <button onClick="GFG_Fun()">
+            click here
+        </button>
+        <nav id="GFG_DOWN" class="navbar navbar-light bg-light">
+  
+        </nav>
+        <script>
+            var down = document.getElementById("GFG_DOWN");
+            function GFG_Fun() {
+                
+                // Create a form synamically
+             /*var form = document.createElement("input");
+                form.setAttribute("method", "post");
+                form.setAttribute("action", "submit.php");*/   
+  
+                // Create an input element for emailID
+                var ID = document.createElement("input");
+                ID.setAttribute("type", "text");
+                ID.setAttribute("name", "emailID");
+                ID.setAttribute("placeholder", "E-Mail ID");
+  
+                // Create an input element for password
+                var PWD = document.createElement("input");
+                PWD.setAttribute("type", "text");
+                PWD.setAttribute("name", "valuelink");
+                PWD.setAttribute("placeholder", "link");
+  
+                /* Create a submit button
+                var s = document.createElement("input");
+                s.setAttribute("type", "submit");
+                s.setAttribute("value", "Submit");*/
+  
+                // Append the email_ID input to the form
+                down.append(ID); 
+                
+                // Append the password to the form
+                down.append(PWD); 
+                
+                // Append the button to the form
+             //   form.append(s); 
+  
+              //  document.getElementsByTagName("body")[0]
+               //.appendChild(form);
+            }
+        </script>
+    </body>
+</html>
